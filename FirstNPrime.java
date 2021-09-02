@@ -1,10 +1,9 @@
 //Author  : Deepansh Dubey.
 //Date    : 2/09/2021.
-//Purpose : To print prime numbers upto n.
+//Purpose : To print first n prime numbers.
 
 import java.io.*;
-class PrimeSeries
-{
+class FirstNPrime{
     public static void main(String args[])throws IOException
     {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -12,7 +11,7 @@ class PrimeSeries
         System.out.println("Please enter the no.");
         p=Integer.parseInt(br.readLine());
 
-        for(i=2;i<p;i++)
+        for(i=2;i<=p;i++)
         {
             for(j=1;j<=i;j++)
             {
