@@ -15,7 +15,6 @@ class Factorial
         }
         System.out.println("The factorial of " + a + " is " + j);
     }
-
     public static void main(String args[])throws IOException
     {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
@@ -24,6 +23,5 @@ class Factorial
         n=Integer.parseInt(br.readLine());
         Factorial ob=new Factorial();
         ob.fact(n);
-
     }
 }

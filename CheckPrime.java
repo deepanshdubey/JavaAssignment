@@ -29,5 +29,4 @@ class CheckPrime
                 System.out.println("It's NOT a PRIME number.");    
             }
     }
-    
 }

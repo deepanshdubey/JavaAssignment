@@ -7,11 +7,11 @@ class FirstNPrime{
     public static void main(String args[])throws IOException
     {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        int p,i,j,k=0;
+        int p,i,j,counter=0,k=0;
         System.out.println("Please enter the no.");
         p=Integer.parseInt(br.readLine());
 
-        for(i=2;i<=p;i++)
+        for(i=2;counter<=p;i++)
         {
             for(j=1;j<=i;j++)
             {
@@ -24,7 +24,7 @@ class FirstNPrime{
             {
                 System.out.print("\t"+i);   
             }
-            k=0;
+            k=0;counter++;
         }
     }
 }

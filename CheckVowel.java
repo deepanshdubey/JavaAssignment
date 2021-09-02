@@ -35,6 +35,5 @@ class CheckVowel
         {
             System.out.println("Don't act oversmart, enter alphabets only.");
         }
-    }
-    
+    }   
 }

@@ -36,6 +36,5 @@ class Fibonacci
 
         Fibonacci ob=new Fibonacci();
         ob.series(n);
-    }
-    
+    }    
 }
