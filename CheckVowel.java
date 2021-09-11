@@ -1,6 +1,6 @@
 //Author  : Deepansh Dubey.
 //Date    : 2/09/2021.
-//Purpose : To check whether a is prime or not.
+//Purpose : To check whether the character is vowel or not.
 
 import java.io.*;
 class CheckVowel
