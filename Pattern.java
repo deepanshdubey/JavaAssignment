@@ -6,20 +6,17 @@ import java.io.*;
 
 class Pattern {
     public static void main(String args[]) throws IOException {
-        int i, j;
-        for (i = 1; i <= 3; i++)
+        int i,j,k;
+        
+        for(i=0;i<4;i++)
         {
-            for (j = 0; j < 3 - i; j++)
+            for(k=0;k<3-i;k++)
             {
                 System.out.print(" ");
             }
-            for (int k = 1; k < i; k++)
+            for(j=0;j<2*i+1;j++)
             {
-                System.out.print(k);
-            }
-            for (int l = i; l >= 1; l--)
-            {
-                System.out.print(l);
+                System.out.print(i+1-Math.abs(i-j));
             }
             System.out.println();
         }
