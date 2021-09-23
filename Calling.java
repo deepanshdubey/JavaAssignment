@@ -7,10 +7,10 @@ class Calling
         a=a*10;
         System.out.println("Call by Value = " + a);
     }
-    int byReference(Calling refer)
+    static void byReference(Calling refer)
     {
-        refer.k=+10;
-        return k;
+        Calling.k=1000;
+        System.out.println("Call by reference function value =" + Calling.k);
     }
     public static void main(String args[])throws IOException
     {
@@ -21,8 +21,7 @@ class Calling
         Calling ob= new Calling();
         ob.byValue(x);
         ob.k=2000;
-        System.out.println("Call by Reference = " + k);
-
+        byReference(ob);
     }
 }
 
