@@ -1,7 +1,7 @@
 import java.io.*;
 class Calling
 {
-    static int k;
+    static Calling k;
     void byValue(int a)
     {
         a=a*10;
@@ -9,8 +9,8 @@ class Calling
     }
     static void byReference(Calling refer)
     {
-        Calling.k=1000;
-        System.out.println("Call by reference function value =" + Calling.k);
+        Calling.k=refer;
+        System.out.println("Call by reference function value = " + Calling.k);
     }
     public static void main(String args[])throws IOException
     {
@@ -20,7 +20,7 @@ class Calling
         x=Integer.parseInt(br.readLine());
         Calling ob= new Calling();
         ob.byValue(x);
-        ob.k=2000;
+        //Calling.k=x;
         byReference(ob);
     }
 }

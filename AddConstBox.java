@@ -1,16 +1,15 @@
 //Author  : Deepansh Dubey.
-//Date    : 11/09/2021.
+//Date    : 24/09/2021.
 
 import java.io.*;
-class SimpleBoxReturn
+class AddConstBox
 {
-   static int width, height, depth;
-    int Volume(int width, int height, int depth)
+    static int width, height, depth;
+    AddConstBox(int width, int height, int depth)
     {
         int vol= width*height*depth;
-        return vol;
+        System.out.println("Volume = " + vol);
     }
-
     public static void main(String args[])throws IOException
     {
         BufferedReader br=new BufferedReader (new InputStreamReader(System.in));
@@ -19,9 +18,6 @@ class SimpleBoxReturn
         width=Integer.parseInt(br.readLine());
         height=Integer.parseInt(br.readLine());
         depth=Integer.parseInt(br.readLine());
-
-        SimpleBoxReturn ob1=new SimpleBoxReturn();
-        //SimpleBoxReturn ob2=new SimpleBoxReturn();
-        System.out.println("Volume = " + ob1.Volume(width,height,depth));
+        AddConstBox ob=new AddConstBox(width,height,depth);
     }
 }
