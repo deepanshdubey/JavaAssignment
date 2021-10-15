@@ -7,24 +7,25 @@ class FirstNPrime{
     public static void main(String args[])throws IOException
     {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
-        int p,i,j,counter=0,k=0;
+        boolean isPrime;
         System.out.println("Please enter the no.");
-        p=Integer.parseInt(br.readLine());
+        int p=Integer.parseInt(br.readLine());
 
-        for(i=2;counter<=p;i++)
+        for(int i=2;i<=p;i++)
         {
-            for(j=1;j<=i;j++)
+            isPrime=true;
+            for(int j=2;j<=Math.sqrt(i);j++)
             {
                 if(i%j==0)
                 {
-                    k++;
+                    isPrime=false;
+                    break;
                 }
             }
-            if (k==2)
+            if (isPrime)
             {
-                System.out.print("\t"+i);   
+                System.out.print(i+", ");
             }
-            k=0;counter++;
         }
     }
 }
