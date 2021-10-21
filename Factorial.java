@@ -5,23 +5,23 @@
 import java.io.*;
 class Factorial
 {
-    public void fact(int a)
+    public void factorial(int a)
     {
-        int i=a; long j=1;
+        int i=a; long  fact = 1;
         while(i!=1)
         {
-            j=j*i;
+            fact = fact*i;
             i--;
         }
-        System.out.println("The factorial of " + a + " is " + j);
+        System.out.println("The factorial of " + a + " is " + fact);
     }
     public static void main(String args[])throws IOException
     {
         BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
         int n;
-        System.out.println("Please enter the number.");
+        System.out.println("Enter a number.");
         n=Integer.parseInt(br.readLine());
         Factorial ob=new Factorial();
-        ob.fact(n);
+        ob.factorial(n);
     }
 }
